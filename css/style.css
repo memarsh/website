@@ -266,7 +266,7 @@
 
 	ul.dark {
   		list-style-type: circle;
-  		list-style-position: outside;
+  		list-style-position: inside;
 	}
 
 		ul.default li {
