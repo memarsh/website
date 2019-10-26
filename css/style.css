@@ -264,6 +264,11 @@
   		list-style-position: inside;
 	}
 
+	ul.dark {
+  		list-style-type: circle;
+  		list-style-position: outside;
+	}
+
 		ul.default li {
 			padding: 0.40em 0em;
 		}
