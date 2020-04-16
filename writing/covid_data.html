@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>COVID-19 Data Presentation</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/css/skel.css" />
+			<link rel="stylesheet" href="/css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header Wrapper -->
+			<div class="wrapper style1">
+			
+				<!-- Header -->
+					<div id="header">
+						<div class="container">
+								
+							<!-- Logo -->
+								<h1><a href="../writing.html" id="logo">Writing</a></h1>
+							
+							<!-- Nav -->
+								<nav id="nav">
+									<ul>
+										<li class="active"><a href="../index.html">Home</a></li>
+										<li>
+											<a href="../timeline.html">Resume</a>
+											<ul>
+												<li><a href="../acting-resume.html">Acting</a></li>
+												<li><a href="../tech-resume.html">Tech</a></li>
+												<li><a href="../teaching-resume.html">Teaching</a></li>
+												<li><a href="../cv.html">CV</a></li>
+											</ul>
+										</li>
+										<li><a href="../writing.html">Writing</a></li>
+									</ul>
+								</nav>
+						</div>
+					</div>
+			</div>
+		
+		<!-- Main -->
+        <div id="main" class="wrapper style4">
+
+            <!-- Content -->
+            <div id="content" class="container">
+                <section>
+                    <header class="major">
+                        <h2>Data Presentation of COVID-19</h2>
+                        <span class="byline">April 15, 2020</span>
+                    </header>
+                    <p>In a crisis, I like to look at the data. I want to know exactly how bad things 
+                    are and how worried I should be. So for about a month, I have been obsessively 
+                    checking various websites for the latest updates on COVID-19 cases in <a href="https://www.regionofwaterloo.ca/en/health-and-wellness/positive-cases-in-waterloo-region.aspx">my city</a>, 
+                    <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html">my country</a>, 
+                    and around the <a href="https://aatishb.com/covidtrends/">world</a>. (I know this isn't the best for my mental health, 
+                    and recently I installed a browser plugin to block myself from visiting those sites 
+                    for more than 10 minutes a day). </p>
+
+                    <br>
+
+                    <p id="examples">In this time, I have noticed a trend in the governmental sources of data, and it worries me. 
+                    I'm not talking about the trend of COVID cases rising, which is worrying enough,
+                    but a trend in how the data is being presented. In short, data is being 
+                    presented to create the most hopeful impression. Let's take a look at two examples:</p>
+                    <br>
+
+                </section>
+                <section>
+
+                    <h2>
+                        Canada
+                    </h2>
+                    <br>
+
+                    <p>I used the WayBack Machine to grab this snapshot of the cumulative COVID-19 cases in Canada 
+                    as shown on the <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html">official government website</a>
+                    on March 23, 2020:
+                    </p>
+                    <img src="images/cumul_cases_Mar23.png" alt="cumulative cases March 23" height="400">
+                    <p>It looks like we're "flattening the curve"! Yay!</p>
+                    <br>
+                    <p>One week later, it still looks like we're "flattening the curve", and the image has been 
+                    promoted to "Figure 1":</p>
+                    <img src="images/cumul_cases_Mar29.png" alt="cumulative cases March 29" height="400">
+                    <br>
+                    <p>Then, another week after that, April 6, 2020, there is no longer a figure showing cumulative cases,
+                    and the honour of being "Figure 1" has been given to this hopeful image:
+                    </p>
+                    <img src="images/cases_by_date_Apr06.png" alt="cases by date April 6" height="400">
+                    <p>Notice the grey area - any data in that area is incomplete, since there is a lag between when
+                    people get sick and when they get tested. The website acknowledges this, but it is not the
+                    clearest way to show uncertainty.
+                    </p>
+                    <br>
+                    <p>As of this writing, the federal website still only shows data by illness onset, as well as 
+                    demographic and exposure setting data. If we want to know the cumulative numbers, we're forced to 
+                    turn to other sources.
+                    </p>
+                    <br>
+
+                </section>
+                <section>
+                    <h2>
+                        Waterloo Region
+                    </h2>
+                    <br>
+
+                    <p>I initially didn't like the <a href="https://www.regionofwaterloo.ca/en/health-and-wellness/positive-cases-in-waterloo-region.aspx">Region of Waterloo</a>'s 
+                    data presentation. It was just a table that had information for every case, including the patients'
+                    age, gender, where they were tested, how they caught it, and whether they were hospitalized or in 
+                    self-isolation. It was nearly impossible to get an overall picture without scraping the data from 
+                    the page and making your own graphs (which I did for about a week).</p>
+                    <img src="images/waterloo_table_Mar27.png" alt="Waterloo table Mar 27" height="200">
+
+                    <br><br>
+                    <p>Since then, the region has really stepped up their game (as I would expect from Canada's Silicon Valley)
+                    and now has a gorgeous, interactive interface showing a wealth of information. I only have one 
+                    minor complaint about their data presentation: the "Outbreaks" table, which shows cases in 
+                    long-term care facilities and retirement homes, used to be sorted by the date the outbreak was declared,
+                    from <i>oldest to newest</i>: </p>
+                    <img src="images/oldest_to_newest_Apr15.png" alt="Waterloo table oldest to newest" height="200">
+                    <p>(The red box is my addition.)</p>
+                    <br>
+                    <p>Ordering it from oldest to newest meant that the numbers at the top had been steadily growing as the illness
+                    spreads. Today I noticed that this table is now sorted by default from <i>newest to oldest</i>:</p>
+                    <img src="images/newest_to_oldest_Apr15.png" alt="Waterloo table newest to oldest" height="200">
+                    <p>Where are all the cases? These outbreaks don't look that bad...</p>
+                    <br>
+                    <p>See, ordering it in this way conceals the larger, scarier numbers - 
+                    unless you scroll down within that box or click the little button next to "Date declared"
+                    that reverses the order.
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <h2>
+                        So, what is going on?
+                    </h2>
+                    <br>
+
+                    <p>
+                       I don't know why the data is being presented this way. I could speculate, but doing that
+                       leads too quickly to conspiracy-theory-land, which I'd rather stay out of. Instead, I'll 
+                       just say that when an organization presents data to the public, they are taking on an important
+                       responsibility. They should be committed to presenting the story that comes from the data,
+                       and <i>not</i> manipulating the data to fit the story they want to tell.</p>
+                    <br>
+                    <p>I want to trust my government. I think that all levels of government have been doing a fairly decent job of
+                       taking measures to control the spread of the virus. But I don't like that I'm being 
+                       forced to seek non-governmental sources of data on COVID-19 cases. 
+                    </p>
+                    <br>
+                    <p>There is a lot of misinformation out there, so much that the WHO has a webpage specifically
+                        to <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">debunk myths</a>.
+                        People <i>need</i> access to good information from trusted sources, because otherwise we'll
+                        be easy targets for bad information from malicious sources. Our governments should not be concealing
+                        or obscuring data through misleading graphs. <b>It's time to step up, Canada</b>.
+                    </p>
+                </section>
+            </div>
+        </div>
+		
+
+	<!-- Footer 
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h2>Connect</h2>
+				</header>
+				<ul class="icons">
+					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+				</ul>
+				<hr />
+			</section>
+		-->
+			<!-- Copyright -->
+				<div id="copyright">
+					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+				</div>			
+		</div>
+
+	</body>
+</html>
