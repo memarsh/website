@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Virtual assistants and source citation</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/css/skel.css" />
+			<link rel="stylesheet" href="/css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header Wrapper -->
+			<div class="wrapper style1">
+			
+				<!-- Header -->
+					<div id="header">
+						<div class="container">
+								
+							<!-- Logo -->
+								<h1><a href="../writing.html" id="logo">Writing</a></h1>
+							
+							<!-- Nav -->
+								<nav id="nav">
+									<ul>
+										<li class="active"><a href="../index.html">Home</a></li>
+										<li>
+											<a href="../timeline.html">Resume</a>
+											<ul>
+												<li><a href="../acting-resume.html">Acting</a></li>
+												<li><a href="../tech-resume.html">Tech</a></li>
+												<li><a href="../teaching-resume.html">Teaching</a></li>
+												<li><a href="../cv.html">CV</a></li>
+											</ul>
+										</li>
+										<li><a href="../writing.html">Writing</a></li>
+									</ul>
+								</nav>
+						</div>
+					</div>
+			</div>
+		
+		<!-- Main -->
+        <div id="main" class="wrapper style4">
+
+            <!-- Content -->
+            <div id="content" class="container">
+                <section>
+                    <header class="major">
+                        <h2>Virtual assitants and source citation</h2>
+                        <span class="byline">July 7, 2020</span>
+                    </header>
+                    <p>It has been very hot in Waterloo for the past week, and this week shows very little sign of letting up.
+                        I don't have AC in my apartment, so coping with the heat has been a challenge.
+                        I've taken to asking Alexa for the temperature multiple times a day, in the hopes that the forecast
+                        has changed and I can look forward to cooler weather ahead.
+                    </p>
+
+                    <br>
+
+                    <p>This past weekend, when I asked Alexa yet again for the temperature that night, I was informed that
+                        there would be a low of 16&#8451;, and I got so excited. That might be enough to get my place cool enough
+                        at night to last the entire next day! I immediately checked my phone for an hourly forecast, so 
+                        I could get an idea of when it would hit that low and how long it would stay there. Imagine my
+                        disappointment when the Weather Network showed that it would only hit a low of 18&#8451;, only
+                        reach that around 4AM, and then immediately start climbing back to the low 30s.
+                    </p>
+
+                    <br>
+
+                    <p id="sources">Had Alexa given me false hope? Where does she get her weather data from, anyway?</p>
+                    <br>
+
+                </section>
+                <section>
+
+                    <h2>
+                        Alexa
+                    </h2>
+                    <br>
+
+                    <p>I decided to ask her. (The following images are screenshots of our conversation taken from the Amazon Alexa app. Our 
+                        actual talk was not accompanied by fun pictures.) </p>
+                    <img src="images/alexa/turkey.png" alt="What is the source of your weather? - Tigris' source is Turkey" class="center">
+                    <br>
+
+                    <p>Okay, maybe I should be more specific:</p>
+                    <img src="images/alexa/environment-canada.PNG" alt="Do you get your weather from environment canada? - Sorry, I couldn't find the answer to your question" class="center">
+                    <br>
+
+                    <p>Maybe that was too specific.</p>
+                    <img src="images/alexa/alexa-information.PNG" alt="Can you tell me where you get your information? - Here's something I found on the web..." class="center">
+                    <br>
+
+                    <p>Huh. That raises another question: what are you using to search the Web?</p>
+                    <img src="images/alexa/search-engine.PNG" alt="Which search engine do you use to search the web? - Here's something I found on Reference.com..." class="center">
+                    <br>
+
+                    <p>Cool, but not an answer to the question I asked. Let's get back to the weather question:</p>
+                    <img src="images/alexa/weather-source.PNG" alt="What is the source of your weather data? - Request for comments publication." class="center">
+                    <br>
+
+                    <p>What does that even mean? <b>Communication failed.</b></p>
+
+                    <br>
+                    <p>Interestingly, the transcripts of our conversation on the Amazon Alexa app <i>did</i> include the source of the information (<a href="https://www.accuweather.com/">AccuWeather.com</a>), along with
+                        far more details than are provided in the audio response:
+                    </p>
+                    <figure>
+                        <img src="images/alexa/full-weather.PNG" alt="Alexa app weather forecast, with source" class="center">
+                        <figcaption><a href="https://youtu.be/F-X4SLhorvw?t=26">Look at all those</a> numbers!</figcaption>
+                    </figure>
+                    <br>
+
+                    <p>So the issue isn't that Alexa doesn't know the source of the information she provides. It's more likely that the developers
+                        haven't developed an <i>intent</i> for Alexa to provide the source when asked.
+                    </p>
+                    <br>
+
+                    <p>A few years ago, I developed an Alexa Skill (Alexa skills are to Alexa devices as apps are to smartphones). One of the most
+                        challenging parts of that work was defining all of the possible intents. Basically, I had to anticipate the sorts of questions
+                        that users would ask and define an intent for each of these question types, to make sure that the skill would recognize and provide what the user wants.
+                        If Alexa can't understand my questions about the source of her information, it's probably because the developers
+                        did not anticipate that anyone would ask for that, and so didn't define an applicable intent.
+                    </p>
+
+                    <br>
+                </section>
+                <section>
+                    <h2>
+                        Siri
+                    </h2>
+                    <br>
+
+                    <p>Out of curiousity, I tried asking Siri the same question after asking her for the forecast, and I was pleasantly surprised:</p>
+                    <img src="images/alexa/siri.PNG" alt="What's the source of your weather data - I got that from The Weather Channel." class="center">
+                    <br>
+
+                    <p>I have no complaints here.</p>
+                    <br>
+                    
+                </section>
+                <section>
+                    <h2>
+                        Google Assistant
+                    </h2>
+                    <br>
+
+                    <p>I plugged in my boyfriend's old Google Home to see what it would do. It didn't understand my question, but asked if I wanted to "know
+                        where weather com gets it's data?" and when I said yes, it read a blurb from weather.com that described the various ways they gather
+                        weather data. Not exactly the answer to my question, but closer to my intention than anything Alexa was able to provide.
+                    </p>
+                    <br>
+
+                </section>
+                <section>
+                    <h2>
+                        Further Thoughts
+                    </h2>
+                    <br>
+
+                    <p>Perhaps I'm being a bit nit-picky. After all, when I ask Alexa about things other than the weather, she almost always
+                        begins her response by citing her source. However, it bugs me that Alexa hasn't been set up to engage with questions 
+                        about the source of the information she provides. <a href="https://www.cbc.ca/news/technology/fake-news-misinformation-online-1.5196865">Misinformation and disinformation</a>
+                        are huge problems today. Ideally, the everyday technology we use should not contribute to the confusion, but instead should
+                        support us as we assess the credibility of the information we consume.
+                    </p>
+                    <br>
+                    
+                    <p>Hey, what a coincidence! This is one of our goals at <a href="https://www.vubblepop.com/">Vubble</a>, where I'm currently leading the development of
+                        our next generation tool for personalized content recommendations. For an example of how technology can support the search for 
+                        quality information, check out the Vubble Credibility Meter in our <a href="https://www.vubblepop.com/media">Discovery Box</a>.</p>
+                </section>
+                
+                
+            </div>
+        </div>
+		
+
+	<!-- Footer 
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h2>Connect</h2>
+				</header>
+				<ul class="icons">
+					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+				</ul>
+				<hr />
+			</section>
+		-->
+			<!-- Copyright -->
+				<div id="copyright">
+					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) Content: Mariah Martin Shein
+				</div>			
+		</div>
+
+	</body>
+</html>

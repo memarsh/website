@@ -226,6 +226,19 @@
 				max-width: 100%;
 			}
 
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		border: 5px solid #555
+	}
+
+/* Figure */
+figcaption {
+	text-align: center;
+}
+
 /* Icon */
 
 	.icon {
@@ -754,6 +767,7 @@
 
 		#main img {
 			max-width: 100%;
+			
 		}
 
 /* Footer */
